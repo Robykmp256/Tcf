@@ -25,6 +25,7 @@ Pantaloni::Pantaloni (){
 		}
 		file.close();
 	} 
+	cout<<" a";
 }
 
 void Pantaloni::Elenco() const{     //Ti stampa l'elenco delle maglie
