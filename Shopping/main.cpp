@@ -36,6 +36,6 @@ int main() {
     }else{
         m.Si();
     }
-
+    cout<<" Buu ";
     return 0;
 }
