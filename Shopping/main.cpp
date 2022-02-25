@@ -36,6 +36,6 @@ int main() {
     }else{
         m.Si();
     }
-    cout<<" cucù ";
+    cout<<" bau ";
     return 0;
 }
