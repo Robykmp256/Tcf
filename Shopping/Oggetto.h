@@ -9,6 +9,11 @@ class Oggetto{
 
 public:
     Oggetto(string,int);
+    string  getnome();
+    string getprezzo();
+    string gettaglia();
+    string getcolore();
+    void stampaog();
 private:
     string nome;
     string prezzo;

@@ -6,7 +6,7 @@ using namespace std;
 
 #include "Maglie.h"
 #include "Oggetto.h"
-
+#include "carrello.h"
 
 
 Maglie::Maglie (){
@@ -54,12 +54,29 @@ bool Maglie::Selezione( int s) const{     //Dato il numero associato alla maglia
         return false;
     }
     if(risp== "s" || risp=="S"){   //con true crea l'oggetto e lo aggiunge al carrello
-        Oggetto * og = new Oggetto ("Maglie.txt",s);
+
         return true;
     }
     return false;
 }
+void Maglie::getoggetto(int s,vector<Oggetto> &carrello2) {
+    fstream file;
+    file.open("Maglie.txt");
+    string maglie;
 
+    if ( file.is_open() ) {
+        for (int i=0; file; i++){
+            getline (file, maglie);
+            if(i>=(s-1)*6 && i<=(s-1)*6+5){
+                //STAMPA UNA RIGA DI TROPPO, la stampa è di controllo poi va tolta
+            }
+        }
+        file.close();
+    }
+    Oggetto * og = new Oggetto ("Maglie.txt",s);
+    carre2=carrello2;
+    carre2.push_back( * og);
+}
 string Maglie::Nome () const{
     return nome;
 }

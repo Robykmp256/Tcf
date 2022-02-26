@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/sarev/Documents/Università/Tcf/Progetto_Finale/Tcf/Shopping
+# Install script for directory: C:/Users/admin/Desktop/UNIVERSITA'/TCF/Tcf-main/Shopping
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/sarev/Documents/Università/Tcf/Progetto_Finale/Tcf/Shopping/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/admin/Desktop/UNIVERSITA'/TCF/Tcf-main/Shopping/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

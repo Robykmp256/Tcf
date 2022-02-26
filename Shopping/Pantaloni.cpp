@@ -3,10 +3,10 @@
 #include <string>
 #include <vector>
 using namespace std;
-
+using std::vector;
 #include "Pantaloni.h"
 #include "Oggetto.h"
-
+#include "carrello.h"
 
 
 Pantaloni::Pantaloni (){
@@ -34,7 +34,7 @@ void Pantaloni::Elenco() const{     //Ti stampa l'elenco delle maglie
 
 }
 
-bool Pantaloni::Selezione( int s) const{     //Dato il numero associato alla maglia che hai scelto ti stampa le caratteristiche
+  bool Pantaloni::Selezione( int s) const{     //Dato il numero associato alla maglia che hai scelto ti stampa le caratteristiche
     fstream file;
     file.open("Pantaloni.txt");
     string pant;
@@ -48,19 +48,37 @@ bool Pantaloni::Selezione( int s) const{     //Dato il numero associato alla mag
         }
         file.close();
     }
-    cout<<" Aggiungere al carrello? No vvuol dire tornare indietro"<<endl<<"S/N"<<endl;
-    string risp;
+
+    cout<<" Aggiungere al carrello? No vuol dire tornare indietro"<<endl<<"S/N"<<endl;
+    string risp;//chiedi se vuoi aggiungere e togliere se vuoi tornare oggetto
     cin>>risp;
     if(risp=="n" || risp=="N"){     //con false torna indietro
         return false;
     }
     if(risp== "s" || risp=="S"){   //con true crea l'oggetto e lo aggiunge al carrello
-        Oggetto * og = new Oggetto ("Pantaloni.txt",s);
+
         return true;
     }
     return false;
 }
+void Pantaloni::getoggetto(int s, vector<Oggetto> &carrello1) {//prima era tipo oggetto ora l'ho messa void
+    fstream file;
+    file.open("Pantaloni.txt");
+    string pant;
 
+    if ( file.is_open() ) {
+        for (int i=0; file; i++){
+            getline (file, pant);
+            if(i>=(s-1)*6 && i<=(s-1)*6+5){
+                    		//STAMPA UNA RIGA DI TROPPO, la stampa è di controllo poi va tolta
+            }
+        }
+        file.close();
+    }
+    Oggetto * og = new Oggetto ("Pantaloni.txt",s);
+    carre1=carrello1;
+    carre1.push_back( * og);
+}
 string Pantaloni::Nome () const{
     return nome;
 }

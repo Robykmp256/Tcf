@@ -7,6 +7,7 @@ using namespace std;
 #include "Maglie.h"
 #include "Pantaloni.h"
 #include "Menu.h"
+#include "Oggetto.h"
 
 Menu::Menu(){
     ma = new Maglie;
@@ -55,6 +56,7 @@ void Menu::Si()const{
         //system ("cls");
         scelta= vet[a-1]->Selezione(b);   //mostra le caratteristiche dell'oggetto scelto e chiede se vuole aggiungerlo al carrello
         //in teoria qua dovrebbe creare l'oggetto e aggiungerlo al carrello
+
     }while(!scelta);
 
 }
