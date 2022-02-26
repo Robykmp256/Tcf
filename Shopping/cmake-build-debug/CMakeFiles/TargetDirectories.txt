@@ -1,3 +1,0 @@
-C:/Users/admin/Desktop/UNIVERSITA'/TCF/Tcf-main/Shopping/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/admin/Desktop/UNIVERSITA'/TCF/Tcf-main/Shopping/cmake-build-debug/CMakeFiles/Shopping.dir
-C:/Users/admin/Desktop/UNIVERSITA'/TCF/Tcf-main/Shopping/cmake-build-debug/CMakeFiles/edit_cache.dir
